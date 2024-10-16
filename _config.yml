@@ -21,7 +21,7 @@ timezone: Asia/Kolkata
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 0xStarlight                          # the main title
+title: ficstkeyfx                          # the main title
 
 tagline: Cyber security, Red Teaming and CTF Writeup's  # it will display as the sub-title
 
@@ -29,23 +29,23 @@ description: >-                        # used by seo meta and the atom feed
   Cyber security, Red Teaming and CTF Writeup's
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'https://0xStarlight.github.io'
+url: 'https://ficstkeyfx.github.io'
 
 github:
-  username: 0xStarlight             # change to your github username
+  username: ficstkeyfx             # change to your github username
 
 twitter:
-  username: Bhaskarpal__           # change to your twitter username
+  username: im__dang           # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Bhaskar Pal
-  email: Bhaskarpal347@gmail.com            # change to your email address
+  name: Hai Dang Phan
+  email: phanhaidang060102@gmail.com            # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/Bhaskarpal__      # change to your twitter homepage
-    - https://github.com/0xStarlight       # change to your github homepage
+    - https://twitter.com/im__dang      # change to your twitter homepage
+    - https://github.com/ficstkeyfx       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -83,7 +83,7 @@ theme_mode:  dark # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://avatars.githubusercontent.com/u/59029171
+avatar: https://avatars.githubusercontent.com/u/89653817
 
 # boolean type, the global switch for ToC in posts.
 toc: true
