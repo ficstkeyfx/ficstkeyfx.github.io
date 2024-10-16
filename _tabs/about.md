@@ -11,12 +11,8 @@ order: 4
 - I'm a passionate cybersecurity enthusiast and programmer looking to render the best of my knowledge and skills
 - I’m currently learning **Offensive Security for OSCP**
 - I'm currently publishing blogs about CTF Write Up and Hackthebox Writeup
-- How to reach me **bhaskarpal347@gmail.com**
+- How to reach me **phanhaidang060102@gmail.com**
 
 # Achievements
 
 # Profiles
-
-<img src="https://tryhackme-badges.s3.amazonaws.com/biscuit.png" alt="TryHackMe">
-
-<img src="https://www.hackthebox.eu/badge/image/244565" alt="HackTheBox">
