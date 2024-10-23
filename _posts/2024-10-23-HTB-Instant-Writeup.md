@@ -86,13 +86,13 @@ And a special information about a hardcode JWT token authentication of admin ```
 
 Use this authentication in swagger requests to get admin and get a lfi in read log api
 
-![image]()
+![image](https://raw.githubusercontent.com/ficstkeyfx/ficstkeyfx.github.io/refs/heads/main/.github/images/20241023_img_lfi.png)
 
 First we get ```/etc/passwd```, so we get username of user account is ```shirohige```
 
 Second, we get key ssh of shirohige by path ```../.ssh/id_rsa``` so now we have a foothold in system
 
-![image]()
+![image](https://raw.githubusercontent.com/ficstkeyfx/ficstkeyfx.github.io/refs/heads/main/.github/images/20241023_idrsa.png)
 
 ```console
 -----BEGIN OPENSSH PRIVATE KEY-----
@@ -211,7 +211,7 @@ WE ARE ROOT NOW !!
 
 # Box Rooted 
 
-![image]()
+![image](https://raw.githubusercontent.com/ficstkeyfx/ficstkeyfx.github.io/refs/heads/main/.github/images/20241023_instant_boxroot.png)
 
 <!-- HTB Profile : [ficstkeyfx](https://app.hackthebox.com/profile/244565) -->
 
