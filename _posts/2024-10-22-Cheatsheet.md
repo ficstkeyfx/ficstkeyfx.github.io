@@ -1,5 +1,5 @@
 ---
-title : "Hack The Box - Instant"
+title : "Cheatsheet"
 author: imdang 🤞🤞
 date: 2024-10-23 11:33:00 +0800
 categories: [Cheatsheet]
@@ -74,6 +74,12 @@ python GitHack.py http://site.htb/.git/
 
 
 # Privilege Escalation 
+
+### Check sudo file permissions
+
+```console
+sudo -l
+```
 
 # Other Tools
 
