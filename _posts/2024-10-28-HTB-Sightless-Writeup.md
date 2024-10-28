@@ -120,11 +120,12 @@ $6$mG3Cp2VPGY.FDE8u$KVWVIHzqTzhOSYkzJIpFc2EsgmqvPa.q2Z9bLUU6tlBWaEwuxCDEP9UFHIXN
 
 Now, SSH with credentials ```michael``` and password ```insaneclownposse```, we can take the user flag
 
-```93a4faf6c3675fc9104f4ab2a4facaaf```
+User flag: ```93a4faf6c3675fc9104f4ab2a4facaaf```
 
 # Privilege Escalation
 
 ## Linpeas
+
 To start, i upload ```linpeas.sh``` and run. Read the report, we will see some special folders in ```/opt``` directory including ```google```, this is a chrome debug file so we run chrome debug in this folder and SSH port forwarding 
 
 ```shell
