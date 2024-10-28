@@ -122,7 +122,6 @@ Now, SSH with credentials ```michael``` and password ```insaneclownposse```, we 
 
 ```93a4faf6c3675fc9104f4ab2a4facaaf```
 
-
 # Privilege Escalation
 
 ## Linpeas
