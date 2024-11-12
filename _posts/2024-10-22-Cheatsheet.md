@@ -47,6 +47,12 @@ Shadow1ng/fscan (github.com)
 ./fscan -h 172.0.0.1/24
 ```
 
+### Zeek with pcap
+```console
+zeek -Cr 0.pcap
+```
+However password in zeek is <hidden> to config for zeek to show in [Ippsec-Cap](https://www.youtube.com/watch?v=O_z6o2xuvlw)
+
 ### SSH Port Forwarding
 
 ```console

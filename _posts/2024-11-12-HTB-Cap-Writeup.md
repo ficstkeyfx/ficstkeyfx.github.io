@@ -3,7 +3,7 @@ title : "Hack The Box - Cap"
 author: imdang 🤞🤞
 date: 2024-11-12 11:33:00 +0800
 categories: [Hackthebox, Hackthebox-Linux, Hackthebox-Easy]
-tags: [nmap,gobuster,linpeas,python,OSCP]
+tags: [nmap,gobuster,linpeas,python,wireshark,OSCP]
 ---
 
 <!-- ![image](https://user-images.githubusercontent.com/59029171/139866885-bc8556d4-7979-4d42-9d4e-027c0900f245.png) -->
