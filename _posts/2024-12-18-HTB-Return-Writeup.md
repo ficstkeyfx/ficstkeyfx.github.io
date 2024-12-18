@@ -1,7 +1,7 @@
 ---
-title : "Hack The Box - Cap"
+title : "Hack The Box - Return"
 author: imdang 🤞🤞
-date: 2024-11-12 11:33:00 +0800
+date: 2024-12-18 11:33:00 +0800
 categories: [Hackthebox, Hackthebox-Win, Hackthebox-Easy]
 tags: [AD, Active Directory, cracknmapexec, winrm, OSCP]
 ---
