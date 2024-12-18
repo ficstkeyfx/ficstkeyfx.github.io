@@ -3,7 +3,7 @@ title : "Hack The Box - Tear Or Dear"
 author: imdang 🤞🤞
 date: 2024-11-13 11:33:00 +0800
 categories: [Hackthebox, Hackthebox-Reverse, Hackthebox-Easy]
-tags: [exe, dnspy]
+tags: [reverse, exe, dnspy]
 ---
 
 <!-- ![image](https://user-images.githubusercontent.com/59029171/139866885-bc8556d4-7979-4d42-9d4e-027c0900f245.png) -->
